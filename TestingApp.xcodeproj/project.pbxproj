@@ -14,6 +14,12 @@
 		81FCA063208F74C5004BB1B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FCA061208F74C5004BB1B3 /* LaunchScreen.storyboard */; };
 		81FCA06E208F74C5004BB1B3 /* TestingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA06D208F74C5004BB1B3 /* TestingAppTests.swift */; };
 		81FCA079208F74C5004BB1B3 /* TestingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA078208F74C5004BB1B3 /* TestingAppUITests.swift */; };
+		81FCA087208F74E2004BB1B3 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA086208F74E2004BB1B3 /* MovieAPI.swift */; };
+		81FCA089208F76E2004BB1B3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA088208F76E2004BB1B3 /* Movie.swift */; };
+		81FCA08B208F77DC004BB1B3 /* MovieAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA08A208F77DC004BB1B3 /* MovieAPITest.swift */; };
+		81FCA09C2090D20D004BB1B3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA09B2090D20D004BB1B3 /* MovieCell.swift */; };
+		81FCA09E2090D359004BB1B3 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA09D2090D359004BB1B3 /* ImageHelper.swift */; };
+		81FCA0A02090D3FB004BB1B3 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FCA09F2090D3FB004BB1B3 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		81FCA074208F74C5004BB1B3 /* TestingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FCA078208F74C5004BB1B3 /* TestingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppUITests.swift; sourceTree = "<group>"; };
 		81FCA07A208F74C5004BB1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81FCA086208F74E2004BB1B3 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		81FCA088208F76E2004BB1B3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		81FCA08A208F77DC004BB1B3 /* MovieAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPITest.swift; sourceTree = "<group>"; };
+		81FCA09B2090D20D004BB1B3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		81FCA09D2090D359004BB1B3 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		81FCA09F2090D3FB004BB1B3 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,14 @@
 		81FCA057208F74C5004BB1B3 /* TestingApp */ = {
 			isa = PBXGroup;
 			children = (
-				81FCA058208F74C5004BB1B3 /* AppDelegate.swift */,
+				81FCA09A2090D1D9004BB1B3 /* Supporting Files */,
 				81FCA05A208F74C5004BB1B3 /* ViewController.swift */,
+				81FCA09B2090D20D004BB1B3 /* MovieCell.swift */,
+				81FCA086208F74E2004BB1B3 /* MovieAPI.swift */,
+				81FCA088208F76E2004BB1B3 /* Movie.swift */,
+				81FCA09F2090D3FB004BB1B3 /* NetworkHelper.swift */,
+				81FCA09D2090D359004BB1B3 /* ImageHelper.swift */,
 				81FCA05C208F74C5004BB1B3 /* Main.storyboard */,
-				81FCA05F208F74C5004BB1B3 /* Assets.xcassets */,
-				81FCA061208F74C5004BB1B3 /* LaunchScreen.storyboard */,
-				81FCA064208F74C5004BB1B3 /* Info.plist */,
 			);
 			path = TestingApp;
 			sourceTree = "<group>";
@@ -112,6 +126,7 @@
 			children = (
 				81FCA06D208F74C5004BB1B3 /* TestingAppTests.swift */,
 				81FCA06F208F74C5004BB1B3 /* Info.plist */,
+				81FCA08A208F77DC004BB1B3 /* MovieAPITest.swift */,
 			);
 			path = TestingAppTests;
 			sourceTree = "<group>";
@@ -123,6 +138,17 @@
 				81FCA07A208F74C5004BB1B3 /* Info.plist */,
 			);
 			path = TestingAppUITests;
+			sourceTree = "<group>";
+		};
+		81FCA09A2090D1D9004BB1B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81FCA058208F74C5004BB1B3 /* AppDelegate.swift */,
+				81FCA05F208F74C5004BB1B3 /* Assets.xcassets */,
+				81FCA061208F74C5004BB1B3 /* LaunchScreen.storyboard */,
+				81FCA064208F74C5004BB1B3 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81FCA0A02090D3FB004BB1B3 /* NetworkHelper.swift in Sources */,
+				81FCA087208F74E2004BB1B3 /* MovieAPI.swift in Sources */,
 				81FCA05B208F74C5004BB1B3 /* ViewController.swift in Sources */,
+				81FCA089208F76E2004BB1B3 /* Movie.swift in Sources */,
+				81FCA09C2090D20D004BB1B3 /* MovieCell.swift in Sources */,
 				81FCA059208F74C5004BB1B3 /* AppDelegate.swift in Sources */,
+				81FCA09E2090D359004BB1B3 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FCA06E208F74C5004BB1B3 /* TestingAppTests.swift in Sources */,
+				81FCA08B208F77DC004BB1B3 /* MovieAPITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestingApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestingApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NateRosario.TestingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestingApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestingApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NateRosario.TestingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
